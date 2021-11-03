@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="customChipChoice" parent="@style/Widget.MaterialComponents.Chip.Choice">
+
+        <item name="chipBackgroundColor">@color/chip_backgount_color_style</item>
+
+        <item name="android:textColor">@color/text_chip_color_style</item>
+
+    </style>
+
+
+</resources>

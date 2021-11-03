@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:selectionRequired="true"
+        app:singleSelection="true">
+        <!-- app:selectionRequired="true" - must be selected any thing, will work default in switch -->
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/all_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            style="@style/customChipChoice"
+            android:text="All"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/for_you_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/customChipChoice"
+            android:text="For you"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/information_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/customChipChoice"
+            android:text="Information"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
